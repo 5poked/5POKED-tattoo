@@ -69,10 +69,10 @@
       transform: scale(1.05);
     }
 
-    .fancy-button img {
+    .fancy-button svg {
       width: 22px;
       height: 22px;
-      filter: brightness(1.2);
+      fill: #d8c08e;
     }
 
     .btn-container {
@@ -89,11 +89,20 @@
 
     <div class="btn-container">
       <a href="https://tally.so/r/nPrQKe" target="_blank" class="fancy-button">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Heraldic_knot.svg" alt="고리문양">
+        <!-- 인라인 SVG 문양 -->
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="50" cy="50" r="40" stroke="#a68b5b" stroke-width="6" fill="none"/>
+          <path d="M 30 50 Q 50 30, 70 50 Q 50 70, 30 50 Z" fill="#a68b5b"/>
+        </svg>
         타투 예약하기
       </a>
+
       <a href="https://www.instagram.com/5poked/" target="_blank" class="fancy-button">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Heraldic_knot.svg" alt="고리문양">
+        <!-- 같은 SVG 문양 재사용 -->
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="50" cy="50" r="40" stroke="#a68b5b" stroke-width="6" fill="none"/>
+          <path d="M 30 50 Q 50 30, 70 50 Q 50 70, 30 50 Z" fill="#a68b5b"/>
+        </svg>
         Instagram
       </a>
     </div>
