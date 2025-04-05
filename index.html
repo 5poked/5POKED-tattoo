@@ -1,79 +1,103 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>5POKED</title>
-    <style>
-        /* 배경 스타일 */
-        body {
-            background: url('background.JPG') no-repeat center center fixed;
-            background-size: cover;
-            margin: 0;
-            padding: 0;
-            font-family: 'Arial', sans-serif;
-            color: white;
-            text-align: center;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>5POKED</title>
 
-        /* 컨텐츠 정렬 */
-        .container {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            padding: 20px;
-        }
+  <!-- 고딕 느낌 Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap" rel="stylesheet">
 
-        h1 {
-            font-size: 4rem;
-            font-weight: bold;
-            margin-bottom: 40px;
-            text-transform: uppercase;
-            text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8);
-        }
+  <style>
+    /* 배경 스타일 */
+    body {
+      background: url('background.JPG') no-repeat center center fixed;
+      background-size: cover;
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+      color: white;
+      text-align: center;
+    }
 
-        /* 버튼 스타일 */
-        .btn {
-            display: inline-block;
-            width: 250px;
-            padding: 18px 0;
-            font-size: 1.3rem;
-            font-weight: bold;
-            text-align: center;
-            background: linear-gradient(135deg, #222, #000);
-            color: white;
-            text-decoration: none;
-            border-radius: 8px;
-            box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.7);
-            transition: all 0.3s ease;
-            border: 2px solid #666;
-        }
+    /* 컨텐츠 정렬 */
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      padding: 20px;
+    }
 
-        .btn:hover {
-            background: linear-gradient(135deg, #444, #111);
-            transform: scale(1.05);
-            box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.9);
-        }
+    h1 {
+      font-size: 4rem;
+      font-weight: bold;
+      margin-bottom: 40px;
+      text-transform: uppercase;
+      text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8);
+      font-family: 'Cinzel Decorative', serif;
+    }
 
-        .btn-container {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-        }
-    </style>
+    /* 중세풍 버튼 스타일 */
+    .fancy-button {
+      font-family: 'Cinzel Decorative', serif;
+      font-size: 18px;
+      padding: 14px 24px;
+      color: #f0e6d2;
+      background: linear-gradient(145deg, #3a2e25, #1e1813);
+      border: 2px solid #a68b5b;
+      border-radius: 12px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6), inset 0 0 8px #a68b5b66;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      gap: 10px;
+      width: 270px;
+    }
+
+    .fancy-button:hover {
+      background: #5c4531;
+      box-shadow: 0 0 20px #a68b5b, inset 0 0 10px #a68b5b;
+      color: #fff8e6;
+      transform: scale(1.05);
+    }
+
+    .fancy-button img {
+      width: 22px;
+      height: 22px;
+      filter: brightness(1.2);
+    }
+
+    .btn-container {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+  </style>
 </head>
 <body>
 
-    <div class="container">
-        <h1>5POKED</h1> <!-- "TATTOO" 삭제됨 -->
-        
-        <div class="btn-container">
-            <a href="https://tally.so/r/nPrQKe" target="_blank" class="btn">타투 예약하기</a>
-            <a href="https://www.instagram.com/5poked/" target="_blank" class="btn">Instagram</a>
-        </div>
+  <div class="container">
+    <h1>5POKED</h1>
+
+    <div class="btn-container">
+      <a href="https://tally.so/r/nPrQKe" target="_blank" class="fancy-button">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Heraldic_knot.svg" alt="고리문양">
+        타투 예약하기
+      </a>
+      <a href="https://www.instagram.com/5poked/" target="_blank" class="fancy-button">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Heraldic_knot.svg" alt="고리문양">
+        Instagram
+      </a>
     </div>
+  </div>
 
 </body>
 </html>
